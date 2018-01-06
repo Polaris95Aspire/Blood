@@ -23,5 +23,11 @@
     <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CELLApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CELLWinApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
