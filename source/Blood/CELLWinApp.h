@@ -186,7 +186,7 @@ namespace Blood
 				LPVOID lpCreateParams =	create_struct->lpCreateParams;
 				if(lpCreateParams)
 				{
-					::SetWindowLong(hWnd, GWLP_USERDATA, (DWORD_PTR)lpCreateParams);
+					::SetWindowLongPtr(hWnd, GWLP_USERDATA, (DWORD_PTR)lpCreateParams);
 					CELLWINApp* pThis = (CELLWINApp*)lpCreateParams;
 
 
@@ -197,7 +197,7 @@ namespace Blood
 			} 
 			else
 			{
-				CELLWINApp* pThis = (CELLWINApp*)GetWindowLong(hWnd, GWLP_USERDATA);
+				CELLWINApp* pThis = (CELLWINApp*)GetWindowLongPtr(hWnd, GWLP_USERDATA);
 
 				if (pThis != nullptr)
 				{
